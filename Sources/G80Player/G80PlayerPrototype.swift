@@ -4,11 +4,13 @@
 //
 //  Created by pulei yu on 2023/11/7.
 //
+#if canImport(UIKit)
 
 import Foundation
 import KSPlayer
 import SnapKit
 import UIKit
+
 
 open class G80PlayerPrototype: UIViewController {
     public var item: G80SourceItem!
@@ -99,3 +101,4 @@ open class G80PlayerPrototype: UIViewController {
         NotificationCenter.default.removeObserver(self)
     }
 }
+#endif

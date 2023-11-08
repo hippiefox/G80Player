@@ -4,11 +4,12 @@
 //
 //  Created by pulei yu on 2023/11/7.
 //
+#if canImport(UIKit)
 
 import Foundation
-import UIKit
 import KSPlayer
 import SnapKit
+import UIKit
 
 open class G80FullPlayerView: G80PlayerView, G80PlayerMaidProtocol {
     open func showLoading(isBuffer: Bool = false) {
@@ -89,3 +90,4 @@ open class G80FullPlayerView: G80PlayerView, G80PlayerMaidProtocol {
     open func playerTrying(count: Int) {
     }
 }
+#endif

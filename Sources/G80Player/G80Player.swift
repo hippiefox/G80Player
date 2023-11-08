@@ -1,5 +1,8 @@
 // The Swift Programming Language
 // https://docs.swift.org/swift-book
+
+#if canImport(UIKit)
+import UIKit
 import KSPlayer
 
 open class G80Player: G80PlayerPrototype {
@@ -21,3 +24,4 @@ open class G80Player: G80PlayerPrototype {
         }
     }
 }
+#endif

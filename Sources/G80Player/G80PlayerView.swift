@@ -4,11 +4,14 @@
 //
 //  Created by pulei yu on 2023/11/7.
 //
+#if canImport(UIKit)
 
 import Foundation
-import UIKit
+
 import KSPlayer
 import SnapKit
+import UIKit
+
 
 open class G80PlayerView: IOSVideoPlayerView {
     public lazy var moreButton: UIButton = {
@@ -75,3 +78,4 @@ open class G80PlayerView: IOSVideoPlayerView {
     @objc open func tapMore() {
     }
 }
+#endif

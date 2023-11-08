@@ -4,9 +4,11 @@
 //
 //  Created by pulei yu on 2023/11/7.
 //
+#if canImport(UIKit)
 
 import Foundation
 import UIKit
+
 
 public protocol G80PlayerMaidProtocol: AnyObject {
     var isBufferingPause: Bool { get set }
@@ -142,3 +144,4 @@ extension G80PlayerMaid{
         }
     }
 }
+#endif
